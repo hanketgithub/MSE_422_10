@@ -98,7 +98,7 @@ int main(int argc, const char * argv[]) {
     }
 
     // specify output file name
-    cp = strchr(argv[1], '.');
+    cp = strrchr(argv[1], '.');
     strncpy(output.name, argv[1], cp - argv[1]);
     strcat(output.name, "_mse.csv");
     
@@ -112,7 +112,7 @@ int main(int argc, const char * argv[]) {
         
     // specify output file name
     output = null;
-    cp = strchr(argv[1], '.');
+    cp = strrchr(argv[1], '.');
     strncpy(output.name, argv[1], cp - argv[1]);
     strcat(output.name, "_psnr.csv");
     
